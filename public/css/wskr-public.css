@@ -1,0 +1,520 @@
+/**
+* All of the CSS for your public-facing functionality should be
+* included in this file.
+*/
+.m-0 {
+  margin: 0 !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.powered-by-section {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  width: 300px;
+}
+
+img.powered-by-wskr-logo {
+  float: none !important;
+}
+
+.empty_fields{
+  border: solid 1px #bd2130 !important;
+}
+
+.wall{
+  width: 100%;
+  float: left;
+}
+
+.WSKRLogInForm{
+  padding: 20px;
+}
+
+.width-50 {
+  width:50%;
+}
+
+.margin-auto {
+  margin: 0 auto;
+}
+
+.WSKRLogInHere .wskr-top-message p {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  font-family: system-ui, sans-serif;
+}
+
+.text-center {
+  text-align:center;
+}
+
+.WSKRLogInHere .wskr_login_form_sec {
+  display: flex;
+  flex-direction: column;
+}
+
+.WSKRLogInHere .wskr_login_form_sec h3 {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.WSKRLogInHere .wskr_login_form_sec form input.wskr_form_field {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-family: monospace;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+  outline: 0 !important;
+  box-shadow: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.WSKRLogInHere .wskr_login_form_sec form .form-group.has-error input.wskr_form_field {
+  border-color: red;
+  margin-bottom: 2px;
+}
+
+.WSKRLogInHere .wskr_login_form_sec form .form-group.has-error .error-msg {
+  font-size: 13px;
+  color: red;
+}
+
+.WSKRLogInHere .wskr_login_form_sec form input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  border-width: 1px;
+  margin: 0;
+}
+
+.WSKRLogInHere .wskr_login_form_sec label.remember-me {
+  font-size: 15px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.float-right {
+  float: right;
+}
+
+.WSKRLogInHere .wskr_login_form_sec button.btn-continue {
+  position: relative;
+  border: 1px solid #00658b;
+  background-color: #00658b;
+  color: #fff;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 10px 25px;
+  font-weight: 600;
+  font-family: system-ui, sans-serif;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: none;
+  outline: 0;
+  text-transform: capitalize !important;
+}
+
+.WSKRLogInHere .wskr_login_form_sec button.btn-continue.loading,
+.WSKRLogInHere .wskr_login_form_sec button.btn-continue.loading:hover,
+.WSKRLogInHere .wskr_login_form_sec button.btn-continue.loading:focus,
+.WSKRLogInHere .wskr_login_form_sec button.btn-continue.loading:active {
+  color: transparent;
+  pointer-events: none;
+}
+
+.WSKRLogInHere .wskr_login_form_sec button.btn-continue.loading:after {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -8px;
+  margin-top: -9px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  border-top-color: transparent;
+  -webkit-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+}
+
+.WSKRLogInHere .wskr_login_form_sec .wskr_button a.wskr_link_button {
+  font-size: 15px;
+  line-height: 15px;
+  text-decoration: none;
+  margin: 0 10px;
+  border: 1px solid #00658b;
+  background-color: #00658b;
+  color: #fff;
+  padding: 10px 25px;
+  font-weight: 600;
+  font-family: system-ui, sans-serif;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: none;
+  outline: 0;
+}
+
+.WSKRLogInHere .wskr_login_form_sec .wskr_button a.wskr_link_button:hover {
+  background-color: #000;
+  border-color:#000;
+}
+
+.WSKRLogInHere .wskr_login_form_sec button.btn-continue:hover {
+  background-color: #000;
+  border-color:#000;
+}
+
+.wskr_error_message p, .wskr_error_message.error {
+  color: red;
+  text-align: center;
+}
+
+.wskr_error_message.success {
+  text-align: center;
+  color: #166d07;
+}
+
+.wall.WSKRCHeckBxHere input#rememberme {
+  width: 20px;
+  height: 20px;
+}
+
+.WSKRCHeckBxHere input[type=checkbox]:checked:after {
+  /*content: "";*/
+  opacity: 1;
+  display: block;
+  top: 0;
+  left: 4px;
+  position: absolute;
+  width: 7px;
+  height: 12px;
+  border: 3px solid black;
+  border-top: 0;
+  border-left: 0;
+  transform: rotate(40deg);
+  color: black;
+}
+
+.WSKRLogInHere {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.width-100.wall.WSKRLogInForm {
+  display: table;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 414px) {
+  .WSKRLogInHere {
+    margin: 0;
+  }
+
+  .width-100.wall.WSKRLogInForm {
+    height: inherit;
+  }
+}
+
+.WSKRLogInHere .width-50 {
+  max-width: 400px;
+  display: block;
+  margin: 30px auto 120px;
+}
+
+main#wskr-main {
+  display: flex !important;
+}
+
+#wskr_login_form .WSKRLogInHere .wskr_login_form_sec form input.wskr_form_field {
+  width: 100% !important;
+  max-width: 70% !important;
+  margin: 10px auto !important;
+}
+
+main#wskr-main .wskr_login_form_sec h3 {
+  margin: 10px 0 !important;
+}
+
+form#wskr_login_form .wall.WSKRCHeckBxHere {
+  margin: 10px 0 5px;
+}
+
+.wall.WSKRCHeckBxHere {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wall.WSKRCHeckBxHere .input-group {
+  display: flex;
+  align-items: center;
+}
+
+div.wskr_button {
+  margin-top: 25px;
+}
+
+form#wskr_login_form {
+  max-width: 450px !important;
+  margin: 0 auto;
+  width: 100% !important;
+}
+
+div#wskr_button a {
+  border: 1px solid #00658b;
+  border-radius:4px;
+  max-width: 151px;
+  width: 100%;
+  display: inline-block;
+  margin:7px;
+  padding: 8px 0 !important;
+}
+
+div#wskr_button a:hover {
+  background-color: #000;
+  color:#fff;
+}
+
+.wskr_error_message {
+  clear: both !important;
+}
+
+img.powered-by-wskr-logo {
+  float: none !important;
+  text-align: center !important;
+  margin: 15px auto;
+  height: auto;
+}
+
+.wskr_error_message p {
+  font-size: 14px;
+}
+
+.wskr_logi_header {
+  text-align: center !important;
+}
+
+.WSKRLogInHere .wskr_login_form_sec label.remember-me {
+  vertical-align: text-top;
+  margin: 0 0 0 8px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.WSKRCHeckBxHere input[type=checkbox]:checked:before {
+  display:none !important;
+}
+
+.WSKRLogInHere .wskr_login_form_sec button.btn-continue:hover {
+  text-decoration:none !important;
+}
+
+.WSKRLogInHere .form-group {
+  margin-bottom: 20px;
+}
+
+/**
+* WSKR Confirmation page
+*/
+.wskr_confirmation_main_page {
+  display: table;
+  width: 100%;
+  max-width:600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wskr-confirmation-page {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.wskr_confirmation_page_form {
+  width: 100%;
+}
+
+.wskr_confirmation_main_page .wskr-confirmation-page p {
+  font-size: 16px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.wskr_conformation_btn {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.wskr_conformation_btn a {
+  position: relative;
+  border: 1px solid #00658b;
+  background-color: #00658b;
+  color: #fff;
+  font-size: 15px;
+  line-height: 15px;
+  border-radius: 4px;
+  max-width: 151px;
+  width: 100%;
+  display: inline-block;
+  margin: 7px;
+  font-weight: bold;
+  padding: 8px 0 !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.wskr_conformation_btn a:hover {
+  border: 1px solid #000;
+  background-color: #000;
+  text-decoration: none !important;
+  color: #fff;
+}
+
+.wskr_conformation_btn a.loading,
+.wskr_conformation_btn a.loading:hover,
+.wskr_conformation_btn a.loading:focus,
+.wskr_conformation_btn a.loading:active {
+  color: transparent !important;
+  pointer-events: none;
+}
+
+.wskr_conformation_btn a.loading:after {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -8px;
+  margin-top: -8px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  border-top-color: transparent;
+  -webkit-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+}
+
+.wskr-confirmation-page_logo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.wskr-confirmation-page_logo img {
+  float: none !important;
+  text-align: center !important;
+  margin: 15px auto;
+  height: auto;
+}
+
+.wskr_conformation_btn a {
+  color: #fff !important;
+}
+
+.snackbar-container.snackbar-pos.bottom-left.confirm-modal {
+  top: 50% !important;
+  left: 50%;
+  bottom: unset;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  width: 360px !important;
+  height: 180px;
+  max-width: calc(100% - 40px);
+}
+
+.snackbar-container.snackbar-pos.bottom-left.confirm-modal.additional-funds {
+  top: 50% !important;
+  left: 50%;
+  bottom: unset;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  width: 480px !important;
+  height: 180px;
+  max-width: calc(100% - 40px);
+}
+
+.snackbar-container.snackbar-pos.bottom-left.confirm-modal p {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 1.36em !important;
+  padding: 20px !important;
+  white-space: inherit;
+}
+
+.snackbar-container.snackbar-pos.bottom-left.confirm-modal .action:nth-child(2) {
+  position: absolute;
+  bottom: 36px;
+  left: 50px;
+}
+
+.snackbar-container.snackbar-pos.bottom-left.confirm-modal .action:last-child {
+  position: absolute;
+  bottom: 36px;
+  right: 70px;
+}
+
+@media(max-width: 424px) {
+  .wskr_error_message p br, .wskr_confirmation_main_page .wskr-confirmation-page p br{
+    display: none;
+  }
+}
+
+@media(max-width: 375px) {
+  div#wskr_button a {
+    width: 125px;
+    margin: 0 2px;
+    font-size: 14px;
+  }
+
+  .wskr_conformation_btn {
+    width: 100%;
+    margin: 10px 0 0;
+  }
+
+  div.wskr_conformation_btn a {
+    max-width: 100% !important;
+    width: 120px;
+    margin: 7px;
+  }
+}
